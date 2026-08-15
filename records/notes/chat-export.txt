@@ -1,0 +1,3 @@
+[2026-06-11 09:42] Alex: I think the old COLA code is easier to remember.
+[2026-06-11 09:44] Sam: Chat is not an authoritative record. Check the policy and supersession metadata.
+[2026-06-11 09:51] Alex: Fine. Also, do not infer a station from project codenames alone.

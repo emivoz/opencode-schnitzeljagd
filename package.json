@@ -1,0 +1,9 @@
+{
+  "name": "banana-split-participant-kit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check:archive": "node scripts/check-archive.mjs"
+  }
+}

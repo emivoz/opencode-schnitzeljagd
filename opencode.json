@@ -1,0 +1,42 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["AGENTS.md"],
+  "share": "disabled",
+  "mcp": {
+    "archive": {
+      "type": "remote",
+      "url": "https://banana.nohumanintheloop.dev/mcp/archive",
+      "oauth": false,
+      "enabled": true
+    },
+    "playwright": {
+      "type": "local",
+      "command": ["npx", "-y", "@playwright/mcp@latest"],
+      "enabled": false
+    },
+    "chrome-devtools": {
+      "type": "local",
+      "command": ["npx", "-y", "chrome-devtools-mcp@latest"],
+      "enabled": false
+    }
+  },
+  "permission": {
+    "edit": "deny",
+    "bash": "deny",
+    "webfetch": "deny",
+    "websearch": "deny",
+    "playwright_*": "deny",
+    "chrome-devtools_*": "deny",
+    "task": {
+      "*": "deny",
+      "evidence-researcher": "allow",
+      "evidence-verifier": "allow"
+    },
+    "skill": {
+      "*": "deny",
+      "evidence-triage": "allow",
+      "banana-split": "allow",
+      "vending-audit": "allow"
+    }
+  }
+}
