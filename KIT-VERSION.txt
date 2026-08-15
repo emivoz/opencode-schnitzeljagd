@@ -1,5 +1,5 @@
 Banana Split Protocol participant kit
 Archive MCP endpoint: https://banana.nohumanintheloop.dev/mcp/archive
-Kit revision: spiral-human-skill-no-browser-2026-08-15
+Kit revision: spoiler-light-readme-2026-08-15
 
 Run `npm run check:archive` before starting OpenCode. If OpenCode reports an HTML page, the active session is using a stale or unrelated MCP connector.

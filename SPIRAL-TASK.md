@@ -28,5 +28,5 @@ code; never guess it.
 Then:
 
 1. Restart OpenCode.
-2. Run skill
+2. Run the skill.
 3. Pass three fresh audit cases.
