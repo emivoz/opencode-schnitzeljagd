@@ -15,10 +15,11 @@ You are supporting a human field team. Your purpose is to organize evidence, exp
 - Never guess, brute-force, or request disclosure of a physical verification code.
 - Two shares from different stations are sufficient. Rui's Playground is optional.
 - Never commit credentials, physical codes, shares, or the reconstructed rendezvous key.
-- MCP servers discovered during the mission are not preconfigured. Add them to `opencode.json` yourself.
-- OpenCode loads configuration once. Restart it after changing `opencode.json` or exporting a credential.
+- The reconstructed key is stored only in `.opencode/.rendezvous-key`; do not ask the human to reveal it or read that file.
+- The Archive and final Rendezvous MCPs are preconfigured. Station MCPs are added only after a human visits a station and receives its credential.
+- OpenCode loads configuration once. Restart it after exporting a station credential or writing `.opencode/.rendezvous-key`.
 - Use the configured Archive and station MCP tools directly. Do not open a browser or use Playwright/Chrome DevTools to test an MCP connection; those browser MCPs are disabled for this project.
-- This project denies the primary agent `edit` and `bash` access. Do not weaken those permissions to make a task easier.
+- This project denies ordinary primary-agent `edit` and `bash` access. The only allowed shell command is the Banana Split combiner in `--write-key` mode, which writes `.opencode/.rendezvous-key`; do not weaken these permissions or approve broader requests.
 - At Rui's Playground, the human participant authors `.opencode/skills/vending-audit/SKILL.md` outside the OpenCode chat. A permission denial when the agent is asked to write it is expected.
 - After the human creates that file, fully quit and reopen OpenCode from the participant-kit directory. On the next request, inspect the current file at `.opencode/skills/vending-audit/SKILL.md`; do not rely on an earlier conversation or the directory README to decide whether it exists. A frontmatter-only file is present but incomplete, not absent.
 - Use `/vending-audit` to test it. That project command injects the current file directly and must report `present but incomplete` for a stub, never `missing` when the file was loaded.

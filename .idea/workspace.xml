@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9d441b0-1a37-4994-ac45-6388c98b3603" name="Changes" comment="" />
+    <list default="true" id="a9d441b0-1a37-4994-ac45-6388c98b3603" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGENTS.md" beforeDir="false" afterPath="$PROJECT_DIR$/AGENTS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPIRAL-TASK.md" beforeDir="false" afterPath="$PROJECT_DIR$/SPIRAL-TASK.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencode.json" beforeDir="false" afterPath="$PROJECT_DIR$/opencode.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,9 +21,12 @@
       <entry key="_/Users/RCE4FE/workspaces/agentic-game/runtime/participant-kit" value="3HxVbdghtPlCshjd29X3JnFWlaU" />
     </persistenceIdMap>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="3HxVbdghtPlCshjd29X3JnFWlaU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -28,9 +37,13 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/RCE4FE/workspaces/agentic-game/runtime/participant-kit",
+    "last_opened_file_path": "/Users/RCE4FE/workspaces/opencode-schnitzeljagd",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -43,8 +56,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.8665.259" />
       </set>
     </attachedChunks>
   </component>
@@ -59,6 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1786809780126</updated>
       <workItem from="1786809781266" duration="308000" />
+      <workItem from="1787158368298" duration="155000" />
     </task>
     <servers />
   </component>

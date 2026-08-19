@@ -9,6 +9,15 @@
       "oauth": false,
       "enabled": true
     },
+    "rendezvous": {
+      "type": "remote",
+      "url": "https://banana.nohumanintheloop.dev/mcp/rendezvous",
+      "oauth": false,
+      "headers": {
+        "Authorization": "Bearer {file:.opencode/.rendezvous-key}"
+      },
+      "enabled": true
+    },
     "playwright": {
       "type": "local",
       "command": ["npx", "-y", "@playwright/mcp@latest"],
@@ -21,8 +30,15 @@
     }
   },
   "permission": {
+    "read": {
+      "*": "allow",
+      ".opencode/.rendezvous-key": "deny"
+    },
     "edit": "deny",
-    "bash": "deny",
+    "bash": {
+      "*": "deny",
+      "node .opencode/skills/banana-split/scripts/combine-shares.mjs --write-key *": "allow"
+    },
     "webfetch": "deny",
     "websearch": "deny",
     "playwright_*": "deny",

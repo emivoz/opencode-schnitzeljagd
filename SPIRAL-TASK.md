@@ -28,5 +28,5 @@ code; never guess it.
 Then:
 
 1. Restart OpenCode.
-2. Run the skill.
+2. Run `/vending-audit`.
 3. Pass three fresh audit cases.

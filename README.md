@@ -36,8 +36,8 @@ den Treffpunkt zu finden.
 - Offizielle Karten, Codes und Zugangsdaten nicht erraten, teilen oder committen.
 - Nichts an Automaten, Glasflächen, Wasseranlagen oder Technik verändern.
 - Bei einer Konfigurationsänderung OpenCode vollständig neu starten.
-- Die Projektberechtigungen verweigern dem Agenten Dateiänderungen und Bash. Das ist bei der Spiral-Aufgabe absichtlich so und darf nicht gelockert werden.
-- Für das Zusammenführen der Shares und das Eintragen des finalen MCP nutzt ihr ein Terminal und einen Editor außerhalb des OpenCode-Chats.
+- Die Projektberechtigungen verweigern dem Agenten gewöhnliche Dateiänderungen und Bash. Nur der Banana-Split-Zusammenführer darf die ignorierte Schlüsseldatei schreiben; lockert diese Berechtigungen nicht.
+- Für das Zusammenführen der Shares nutzt ihr die Banana-Split-Funktion. Sie schreibt den Schlüssel in die ignorierte Datei `.opencode/.rendezvous-key`; der finale MCP ist bereits vorkonfiguriert.
 
 Eine vollständige technische Anleitung ist nicht nötig, um zu beginnen. Fragt
 OpenCode nach dem nächsten belegbaren Schritt und entscheidet als Team.
