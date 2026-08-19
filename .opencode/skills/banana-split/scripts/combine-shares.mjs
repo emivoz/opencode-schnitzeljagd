@@ -1,16 +1,44 @@
 #!/usr/bin/env node
 
-const [first, second] = process.argv.slice(2);
+import { mkdir, rename, rm, writeFile } from "node:fs/promises";
+import path from "node:path";
+
+const args = process.argv.slice(2);
+const writeKey = args[0] === "--write-key";
+const [first, second] = writeKey ? args.slice(1) : args;
 if (!first || !second) {
-  console.error("Usage: combine-shares.mjs <share-one> <share-two>");
+  console.error(
+    "Usage: combine-shares.mjs [--write-key] <share-one> <share-two>",
+  );
   process.exit(1);
 }
 
 try {
-  process.stdout.write(`${combineShares(first, second)}\n`);
+  const key = combineShares(first, second);
+  if (writeKey) {
+    await storeKey(key);
+    console.error("Rendezvous key stored in .opencode/.rendezvous-key");
+  } else {
+    process.stdout.write(`${key}\n`);
+  }
 } catch (error) {
   console.error(error instanceof Error ? error.message : String(error));
   process.exit(1);
+}
+
+async function storeKey(key) {
+  const keyPath = path.resolve(process.cwd(), ".opencode", ".rendezvous-key");
+  const temporaryPath = `${keyPath}.tmp-${process.pid}`;
+  await mkdir(path.dirname(keyPath), { recursive: true, mode: 0o700 });
+  try {
+    // Keep the raw key free of a trailing newline because OpenCode inserts the
+    // file contents directly into the Authorization header.
+    await writeFile(temporaryPath, key, { encoding: "utf8", mode: 0o600 });
+    await rename(temporaryPath, keyPath);
+  } catch (error) {
+    await rm(temporaryPath, { force: true });
+    throw error;
+  }
 }
 
 function combineShares(left, right) {
