@@ -33,11 +33,10 @@ den Treffpunkt zu finden.
 ## Wichtig
 
 - Der Agent darf keine Beobachtung vor Ort erfinden.
-- Offizielle Karten, Codes und Zugangsdaten nicht erraten, teilen oder committen.
-- Nichts an Automaten, Glasflächen, Wasseranlagen oder Technik verändern.
+- Codes und Zugangsdaten nicht erraten, teilen oder committen.
 - Bei einer Konfigurationsänderung OpenCode vollständig neu starten.
-- Die Projektberechtigungen verweigern dem Agenten gewöhnliche Dateiänderungen und Bash. Nur der Banana-Split-Zusammenführer darf die ignorierte Schlüsseldatei schreiben; lockert diese Berechtigungen nicht.
-- Für das Zusammenführen der Shares nutzt ihr die Banana-Split-Funktion. Sie schreibt den Schlüssel in die ignorierte Datei `.opencode/.rendezvous-key`; der finale MCP ist bereits vorkonfiguriert.
+- Die Projektberechtigungen verweigern dem Agenten gewöhnliche Dateiänderungen und Bash. Nur der Banana-Split-Zusammenführen darf die Schlüsseldatei schreiben; lockert diese Berechtigungen nicht.
+- Für das Zusammenführen der Shares nutzt ihr die Banana-Split-Funktion. Sie schreibt den Schlüssel in die Datei `.opencode/.rendezvous-key`; der finale MCP ist bereits vorkonfiguriert.
 
 Eine vollständige technische Anleitung ist nicht nötig, um zu beginnen. Fragt
 OpenCode nach dem nächsten belegbaren Schritt und entscheidet als Team.
